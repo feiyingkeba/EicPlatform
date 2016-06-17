@@ -1,0 +1,34 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Angular Service</title>
+    <link href="@Url.Content("~/Content/bootstrap.darkly.css")" type="text/css" rel="stylesheet" />
+    <link href="@Url.Content("~/Content/bootstrap-slider/css/bootstrap-slider.css")" type="text/css" rel="stylesheet" />
+
+    <script src="@Url.Content("~/Scripts/jquery-2.1.4.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/bootstrap.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Content/bootstrap-slider/bootstrap-slider.min.js")" type="text/javascript"></script>
+
+    <script src="@Url.Content("~/Scripts/angular.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/angular-route.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/Controller/myServiceApp.js")" type="text/javascript"></script>
+</head>
+<body>
+    <div ng-controller="myParseCtrl1">
+        <h1>{{parseValue}}</h1>
+    </div>
+    <div ng-controller="myParseCtrl2">
+        <input type="text" ng-model="expression" />
+        <h1>{{parsedValue}}</h1>
+    </div>
+    <div ng-controller="myParseCtrl3">
+        <h1>{{parsedValue}}</h1>
+    </div>
+</body>
+</html>

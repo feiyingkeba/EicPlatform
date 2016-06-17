@@ -1,0 +1,35 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html ng-app="pageTabApp">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="@Url.Content("~/Content/bootstrap.darkly.css")" type="text/css" rel="stylesheet" />
+    <script src="@Url.Content("~/Scripts/angular.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/angular-ui-router.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/angular-animate.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/Controller/pageTabApp.js")" type="text/javascript"></script>
+</head>
+<body>
+    <h1>My Page Tab App</h1>
+    <div>
+        <nav>
+            <ul class="nav nav-pills">
+                <li><a data-ui-sref="Page1">Page1</a></li>
+                <li><a data-ui-sref="Page2">Page2</a></li>
+                <li><a data-ui-sref="Page3">Page3</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div data-ui-view="sub" class="panel-success">
+
+    </div>
+    <div data-ui-view="main">
+        <h2>this is main</h2>
+    </div>
+</body>
+</html>

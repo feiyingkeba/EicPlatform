@@ -1,0 +1,13 @@
+﻿<h2>这是ngTable的基本练习</h2>
+
+<div class="row" ng-controller="tableBaseController">
+    <label>{{title}}</label>
+    <div class="row">
+        <table ng-table="tableParams" class="table table-striped">
+            <tr ng-repeat="user in $data">
+                <td data-title="Name">{{user.name}}</td>
+                <td data-title="Age">{{user.age}}</td>
+            </tr>
+        </table>
+    </div>
+</div>

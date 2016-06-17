@@ -1,0 +1,28 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html ng-app="formApp">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>多表单</title>
+   
+    <link href="@Url.Content("~/Content/bootstrap.darkly.css")" type="text/css" rel="stylesheet" />
+    <link href="@Url.Content("~/Content/MyForm.css")" type="text/css" rel="stylesheet" />
+    <script src="@Url.Content("~/Scripts/angular.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/angular-ui-router.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/angular-animate.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/Controller/formApp.js")" type="text/javascript"></script>
+</head>
+<body>
+    <h1 class="text-info">UI Router 练习 表单导航 分步骤 路由嵌套经典例子</h1>
+    <h2>
+        <a data-ui-sref="form">载入表单</a>
+    </h2>
+    <div class="container">
+        <div data-ui-view></div>
+    </div>
+</body>
+</html>

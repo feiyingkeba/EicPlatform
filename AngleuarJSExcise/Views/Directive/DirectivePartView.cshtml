@@ -1,0 +1,36 @@
+﻿<div ng-controller="parentCtrl">
+    <h3>指令scope参数——false、true、{}对比测试</h3>
+    parent:
+    <div class="row">
+        <span>{{parentName}}</span>
+        <input type="text" ng-model="parentName" />
+        <br />
+        <child-a></child-a>
+        <br />
+        <child-b></child-b>
+        <br />
+        <br />
+
+        @*特别注意：\\\@与=对应的attr，\\@是单向绑定父域的机制，记得加上{{}}；&对应的attrName必须以on-开头*@
+        <child-c my-name="name" my-sexy-attr="sexy" my-age="{{age}}" on-say="say('i m ' + name)"></child-c>
+
+    </div>
+    t1指令模板
+    <script type="text/html" id="t1">
+        <span>{{parentName}}</span>
+        <input type="text" ng-model="parentName" />
+
+        <div>
+            <span>{{myName}}</span>
+            <input type="text" ng-model="myName" />
+        </div>
+        <div>
+            <span>{{mySexy}}</span>
+            <input type="text" ng-model="mySexy" />
+        </div>
+        <div>
+            <span>{{myAge}}</span>
+            <input type="text" ng-model="myAge" />
+        </div>
+    </script>
+</div>

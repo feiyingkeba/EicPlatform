@@ -1,0 +1,38 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html ng-app="myDirectiveApp">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="@Url.Content("~/Content/bootstrap.darkly.css")" type="text/css" rel="stylesheet" />
+    <link href="@Url.Content("~/Content/angular-xeditable/css/xeditable.css")" type="text/css" rel="stylesheet" />
+    <script src="@Url.Content("~/Scripts/angular.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/Controller/myDirectiveApp.js")" type="text/javascript"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row" ng-controller="ExtendCtrl">
+            <div class="col-md-5">
+                <div class="well">
+                    <span>{{Aboard.atitle}}</span>
+                    <span>{{Bboard.atitle}}</span>
+                    <span>{{Cboard.atitle}}</span>
+                    <span>{{Cboard.ctitle||"没有找到Ctitle"}}</span>
+                </div>
+            </div>
+
+            <div class="col-md-7">
+                <div data-hello-world data-color-attr="{{color}}"></div>
+                <input type="text" ng-model="color" placeholder="Enter a color" />
+                <div class="panel panel-default">
+                    <div lee-panel data-panel-title="asdsdff"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

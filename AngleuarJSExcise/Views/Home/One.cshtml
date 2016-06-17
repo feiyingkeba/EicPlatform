@@ -1,0 +1,40 @@
+﻿<div ng-controller="StoreController">
+    <div class="panel-heading">
+        FullText Search:<input ng-model="query" type="text" />
+        Order By
+        <select ng-model="orderFields">
+            <option value="price">Price</option>
+            <option value="name">Name</option>
+        </select>
+    </div>
+    <div class="panel-body">
+        <ul class="list-group">
+            <li class="list-group-item" ng-repeat="product in products|filter:query|orderBy:orderFields">
+                <h3>{{product.name}}</h3>
+                <b>{{product.description|uppercase}}</b>
+                <em class="pull-right">{{product.price|currency}}</em>
+
+                <section ng-init="tab==1" ng-controller="PanelController">
+                    <ul class="nav nav-pills">
+                        <li ng-class="{active:isSelected(1)}"><a href="" ng-click="selectedTab(1)">Description</a></li>
+                        <li ng-class="{active:isSelected(2)}"><a href="" ng-click="selectedTab(2)">Specifications</a></li>
+                        <li ng-class="{active:isSelected(3)}"><a href="" ng-click="selectedTab(3)">Reviews</a></li>
+                    </ul>
+                    <div class="panel" ng-show="isSelected(1)">
+                        <h4>Description</h4>
+                        <blockquote>{{product.description}}</blockquote>
+                    </div>
+                    <div class="panel" ng-show="isSelected(2)">
+                        <h4>Specifications</h4>
+                        <blockquote>Not Yet</blockquote>
+                    </div>
+                    <div class="panel" ng-show="isSelected(3)">
+                        <h4>Reviews</h4>
+                        <blockquote>Not Yet</blockquote>
+                    </div>
+                </section>
+
+            </li>
+        </ul>
+    </div>
+</div>
