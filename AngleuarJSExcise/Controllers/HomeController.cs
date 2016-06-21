@@ -40,6 +40,11 @@ namespace AngleuarJSExcise.Controllers
             return Json(datas, JsonRequestBehavior.AllowGet);
         }
 
+        public ActionResult GoToThree()
+        {
+            return View();
+        }
+
     }
 
     public class ProductModel

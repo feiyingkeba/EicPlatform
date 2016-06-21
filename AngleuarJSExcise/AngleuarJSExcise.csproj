@@ -497,6 +497,7 @@
     <Content Include="Views\XEditable\ModalView.cshtml" />
     <Content Include="Views\AngService\Index.cshtml" />
     <Content Include="Views\Directive\DirectivePartView.cshtml" />
+    <Content Include="Views\Home\GoToThree.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
