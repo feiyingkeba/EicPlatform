@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngleuarJSExcise", "AngleuarJSExcise\AngleuarJSExcise.csproj", "{80D9571B-CEBF-4502-AA22-4ED4F4D320E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "ClassLibrary1\ClassLibrary1.csproj", "{0F30CA70-3E33-4B52-826B-F525F91D91EC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{80D9571B-CEBF-4502-AA22-4ED4F4D320E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{80D9571B-CEBF-4502-AA22-4ED4F4D320E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{80D9571B-CEBF-4502-AA22-4ED4F4D320E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F30CA70-3E33-4B52-826B-F525F91D91EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F30CA70-3E33-4B52-826B-F525F91D91EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F30CA70-3E33-4B52-826B-F525F91D91EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F30CA70-3E33-4B52-826B-F525F91D91EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
