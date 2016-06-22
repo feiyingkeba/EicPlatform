@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngleuarJSExcise", "Angleua
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "ClassLibrary1\ClassLibrary1.csproj", "{0F30CA70-3E33-4B52-826B-F525F91D91EC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary2", "ClassLibrary2\ClassLibrary2.csproj", "{B4B78C3A-8386-472B-9FA7-ABDF5956045A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{0F30CA70-3E33-4B52-826B-F525F91D91EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F30CA70-3E33-4B52-826B-F525F91D91EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F30CA70-3E33-4B52-826B-F525F91D91EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4B78C3A-8386-472B-9FA7-ABDF5956045A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4B78C3A-8386-472B-9FA7-ABDF5956045A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4B78C3A-8386-472B-9FA7-ABDF5956045A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4B78C3A-8386-472B-9FA7-ABDF5956045A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
